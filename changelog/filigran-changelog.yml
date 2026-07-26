@@ -1,0 +1,38 @@
+generated: '2026-07-19'
+method: searched
+source: https://github.com/OpenCTI-Platform/opencti/releases ; https://github.com/OpenAEV-Platform/openaev/releases
+scheme: date-based (CalVer, e.g. 7.YYMMDD.n)
+products:
+- product: OpenCTI
+  current: 7.260715.0
+  releases_url: https://github.com/OpenCTI-Platform/opencti/releases
+  entries:
+  - version: 7.260715.0
+    date: '2026-07-15'
+  - version: 7.260710.0
+    date: '2026-07-10'
+  - version: 7.260309.0-lts.6
+    date: '2026-07-09'
+    note: LTS maintenance release
+  - version: 7.260706.0
+    date: '2026-07-06'
+  - version: 7.260701.0
+    date: '2026-07-01'
+  - version: 7.260626.0
+    date: '2026-06-26'
+- product: OpenAEV
+  current: 2.260717.0
+  releases_url: https://github.com/OpenAEV-Platform/openaev/releases
+  entries:
+  - version: 2.260717.0
+    date: '2026-07-17'
+  - version: 2.260716.1
+    date: '2026-07-16'
+  - version: 2.260716.0
+    date: '2026-07-16'
+  - version: 2.260715.0
+    date: '2026-07-15'
+notes: >-
+  Recent-window snapshot from GitHub releases; per-release breaking/additions
+  detail lives in each release's notes. OpenCTI ships LTS branches
+  (…-lts.n) alongside the rolling line.

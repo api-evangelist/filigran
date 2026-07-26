@@ -1,0 +1,28 @@
+generated: '2026-07-19'
+method: searched
+source: https://pypi.org/project/pycti/ ; https://pypi.org/project/pyobas/
+packages:
+- language: python
+  registry: pypi
+  name: pycti
+  version: 7.260715.0
+  url: https://pypi.org/project/pycti/
+  install: pip install pycti
+  official: true
+  repo: https://github.com/OpenCTI-Platform/client-python
+  description: Official OpenCTI Python client for the GraphQL API.
+- language: python
+  registry: pypi
+  name: pyobas
+  version: 1.18.20
+  url: https://pypi.org/project/pyobas/
+  install: pip install pyobas
+  official: true
+  repo: https://github.com/OpenAEV-Platform/client-python
+  description: Official OpenAEV (OpenBAS) Python client for the REST API.
+notes: >-
+  pycti and pyobas are the two first-party API SDKs. Filigran also publishes
+  client-side UI/component libraries on npm (@filigran/ui, @filigran/icon,
+  @filigran/chatbot, @filigran/rich-text-editor) — those are catalogued in
+  components/filigran-components.yml since they are design-system components,
+  not API client SDKs.

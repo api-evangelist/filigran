@@ -1,0 +1,42 @@
+generated: '2026-07-19'
+method: searched
+source: https://www.npmjs.com/org/filigran ; https://github.com/FiligranHQ/filigran-ui
+families:
+- name: Design System & UI
+  description: React + Tailwind design system, components, and icon library used across the XTM product suite.
+  loaders:
+  - language: javascript
+    registry: npm
+    name: '@filigran/ui'
+    version: 1.5.2
+    url: https://www.npmjs.com/package/@filigran/ui
+    install: npm install @filigran/ui
+    official: true
+  - language: javascript
+    registry: npm
+    name: '@filigran/icon'
+    version: 0.24.1
+    url: https://www.npmjs.com/package/@filigran/icon
+    install: npm install @filigran/icon
+    official: true
+- name: Chatbot
+  description: Standalone React + Tailwind chat panel component (Filigran Copilot / OpenCTI chatbot surface).
+  loaders:
+  - language: javascript
+    registry: npm
+    name: '@filigran/chatbot'
+    version: 3.7.4
+    url: https://www.npmjs.com/package/@filigran/chatbot
+    install: npm install @filigran/chatbot
+    official: true
+- name: Rich Text Editor
+  description: Embeddable rich-text editor component.
+  loaders:
+  - language: javascript
+    registry: npm
+    name: '@filigran/rich-text-editor'
+    version: 1.2.0
+    url: https://www.npmjs.com/package/@filigran/rich-text-editor
+    install: npm install @filigran/rich-text-editor
+    official: true
+repo: https://github.com/FiligranHQ/filigran-ui

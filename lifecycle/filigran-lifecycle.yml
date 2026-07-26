@@ -1,0 +1,24 @@
+generated: '2026-07-19'
+method: searched
+source: https://docs.opencti.io/latest/administration/product-life-cycle/ ; https://github.com/OpenCTI-Platform/opencti/releases
+versioning:
+  scheme: date-based (CalVer)
+  current_opencti: 7.260715.0
+  current_openaev: 2.260717.0
+  model: continuous delivery — releases published when ready (daily to weekly)
+  docs: https://docs.opencti.io/latest/administration/product-life-cycle/
+lts:
+  introduced: OpenCTI v7 (7.260224.0)
+  policy: >-
+    Long-term support releases provide stability; consecutive LTS releases have
+    a ~6-month support overlap so organizations can validate the new LTS while
+    the previous one remains fully supported.
+deprecation:
+  policy_url: https://docs.opencti.io/latest/administration/product-life-cycle/
+  end_of_life: >-
+    LTS releases progress from branching through end of life per the product
+    life-cycle documentation; non-LTS releases are superseded as newer builds ship.
+status_page: https://status.filigran.io/
+releases:
+  opencti: https://github.com/OpenCTI-Platform/opencti/releases
+  openaev: https://github.com/OpenAEV-Platform/openaev/releases

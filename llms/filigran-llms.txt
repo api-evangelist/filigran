@@ -1,0 +1,38 @@
+# Filigran
+
+> Filigran is a cybersecurity company (founded 2022, backed by Accel and Insight Partners) that builds the eXtended Threat Management (XTM) suite. Its open-source flagship OpenCTI exposes a GraphQL API for STIX 2.1 cyber threat intelligence, and OpenAEV (formerly OpenBAS) provides a RESTful API for breach-and-attack simulation and adversarial exposure validation. Filigran is SOC 2 Type 2 and ISO/IEC 27001:2022 certified.
+
+## APIs
+
+- [OpenCTI GraphQL API](https://docs.opencti.io/latest/reference/api/): Full GraphQL API on /graphql for cyber threat intelligence; bearer-token auth; GraphiQL playground on /public/graphql; native embedded MCP server.
+- [OpenAEV REST API](https://docs.openaev.io/latest/): RESTful API for adversary simulation and breach-and-attack simulation (ISO 22398-aligned).
+
+## Docs
+
+- [OpenCTI Documentation](https://docs.opencti.io/latest/)
+- [OpenCTI API reference](https://docs.opencti.io/latest/reference/api/)
+- [OpenCTI getting started](https://docs.opencti.io/latest/usage/getting-started/)
+- [OpenCTI data streaming (SSE / TAXII 2.1)](https://docs.opencti.io/latest/reference/streaming/)
+- [OpenCTI webhooks / notifiers](https://docs.opencti.io/latest/administration/notifiers/)
+- [OpenCTI product life cycle (LTS / EOL)](https://docs.opencti.io/latest/administration/product-life-cycle/)
+- [OpenAEV Documentation](https://docs.openaev.io/latest/)
+
+## SDKs & Tools
+
+- [pycti (PyPI)](https://pypi.org/project/pycti/): Official OpenCTI Python client.
+- [pyobas (PyPI)](https://pypi.org/project/pyobas/): Official OpenAEV Python client.
+- [xtm-mcp (GitHub)](https://github.com/FiligranHQ/xtm-mcp): Official eXtended Threat Management MCP servers.
+- [@filigran/ui (npm)](https://www.npmjs.com/package/@filigran/ui): React design-system component library.
+
+## Company
+
+- [Filigran](https://filigran.io/)
+- [GitHub — FiligranHQ](https://github.com/FiligranHQ)
+- [GitHub — OpenCTI-Platform](https://github.com/OpenCTI-Platform)
+- [GitHub — OpenAEV-Platform](https://github.com/OpenAEV-Platform)
+- [Blog](https://filigran.io/blog/)
+- [Academy](https://academy.filigran.io/)
+- [XTM Hub](https://hub.filigran.io/)
+- [Status](https://status.filigran.io/)
+- [Terms of Service](https://filigran.io/terms-of-services/)
+- [Privacy Policy](https://filigran.io/privacy-policy/)

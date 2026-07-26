@@ -1,0 +1,20 @@
+generated: '2026-07-19'
+method: searched
+hosts:
+- host: https://filigran.io
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+- host: https://docs.opencti.io
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+notes: >-
+  No /.well-known/ discovery documents are published on the marketing or docs
+  hosts. Absence is valid, recorded data — no WellKnown/SecurityTxt pointer is
+  emitted. OIDC discovery, when used, is served by the customer's own configured
+  identity provider, not by a Filigran-hosted well-known endpoint.

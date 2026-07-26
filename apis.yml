@@ -1,8 +1,30 @@
 aid: filigran
 name: Filigran
-description: 'Filigran is a company surfaced as a portfolio company of accel, insight-partners and added
-  to the API Evangelist network as a stub for enrichment. Sector: cybersecurity. This profile is a lead
-  awaiting the enrichment pipeline.'
+description: >-
+  Filigran is a cybersecurity company founded in 2022 that builds the eXtended
+  Threat Management (XTM) suite of open-source and enterprise products for cyber
+  threat intelligence, adversary simulation, and crisis management. Its flagship
+  OpenCTI platform exposes a full GraphQL API for structuring, storing, and
+  disseminating STIX 2.1 threat-intelligence knowledge, while OpenAEV (formerly
+  OpenBAS) provides a RESTful API for breach-and-attack simulation and
+  adversarial exposure validation. Filigran maintains official Python clients
+  (pycti, pyobas), a native embedded Model Context Protocol (MCP) server, TAXII
+  2.1 and SSE live-stream data sharing, webhooks, and a React component /
+  design-system library. The company is SOC 2 Type 2 and ISO/IEC 27001:2022
+  certified and is backed by Accel and Insight Partners.
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://avatars.githubusercontent.com/u/91369524?v=4
 url: https://raw.githubusercontent.com/api-evangelist/filigran/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,16 +35,117 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Cybersecurity
-apis: []
+- Threat Intelligence
+- OpenCTI
+- OpenAEV
+- STIX
+- GraphQL
+- Breach and Attack Simulation
+- Open Source
+- Security
+apis:
+- name: OpenCTI GraphQL API
+  description: >-
+    The OpenCTI platform exposes a full GraphQL API on the /graphql endpoint for
+    programmatic access to cyber threat intelligence knowledge modeled on STIX
+    2.1. Authentication uses a per-user bearer API token. A GraphiQL-based
+    playground is available on /public/graphql, and a native embedded MCP server
+    is exposed for AI agents.
+  humanURL: https://docs.opencti.io/latest/reference/api/
+  baseURL: https://demo.opencti.io/graphql
+  tags:
+  - Threat Intelligence
+  - GraphQL
+  - STIX
+  - OpenCTI
+  properties:
+  - type: Documentation
+    url: https://docs.opencti.io/latest/
+  - type: APIReference
+    url: https://docs.opencti.io/latest/reference/api/
+  - type: GettingStarted
+    url: https://docs.opencti.io/latest/usage/getting-started/
+  - type: Webhooks
+    url: https://docs.opencti.io/latest/administration/notifiers/
+- name: OpenAEV REST API
+  description: >-
+    OpenAEV (formerly OpenBAS) is an ISO 22398-aligned platform for planning and
+    running crisis exercises, adversary simulations, and breach-and-attack
+    simulation. It ships a RESTful API and a UX-oriented frontend, with an
+    official Python client (pyobas).
+  humanURL: https://docs.openaev.io/latest/
+  baseURL: https://demo.openaev.io/api
+  tags:
+  - Breach and Attack Simulation
+  - Adversarial Exposure Validation
+  - OpenAEV
+  properties:
+  - type: Documentation
+    url: https://docs.openaev.io/latest/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/filigran-domain-security.yml
 - type: Website
   url: https://filigran.io/
+- type: DeveloperPortal
+  url: https://docs.opencti.io/latest/
+- type: Documentation
+  url: https://docs.opencti.io/latest/
+- type: APIReference
+  url: https://docs.opencti.io/latest/reference/api/
+- type: GettingStarted
+  url: https://docs.opencti.io/latest/usage/getting-started/
+- type: Blog
+  url: https://filigran.io/blog/
+- type: GitHubOrganization
+  url: https://github.com/FiligranHQ
+- type: Support
+  url: https://academy.filigran.io/
+- type: TermsOfService
+  url: https://filigran.io/terms-of-services/
+- type: PrivacyPolicy
+  url: https://filigran.io/privacy-policy/
+- type: StatusPage
+  url: https://status.filigran.io/
+- type: Deprecation
+  url: https://docs.opencti.io/latest/administration/product-life-cycle/
+- type: MCPServer
+  url: mcp/filigran-mcp.yml
+- type: Packages
+  url: packages/filigran-packages.yml
+- type: SDKs
+  url: packages/filigran-packages.yml
+- type: Components
+  url: components/filigran-components.yml
+- type: Authentication
+  url: authentication/filigran-authentication.yml
+- type: Conformance
+  url: conformance/filigran-conformance.yml
+- type: Compliance
+  url: conformance/filigran-conformance.yml
+- type: Lifecycle
+  url: lifecycle/filigran-lifecycle.yml
+- type: ChangeLog
+  url: changelog/filigran-changelog.yml
+- type: Conventions
+  url: conventions/filigran-conventions.yml
+- type: Sandbox
+  url: sandbox/filigran-sandbox.yml
+- type: Webhooks
+  url: asyncapi/filigran-opencti-webhooks.yml
+- type: LLMsTxt
+  url: llms/filigran-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

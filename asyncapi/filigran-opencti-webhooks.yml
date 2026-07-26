@@ -1,0 +1,33 @@
+generated: '2026-07-19'
+method: searched
+type: Webhooks
+source: https://docs.opencti.io/latest/administration/notifiers/ ; https://docs.opencti.io/latest/reference/streaming/
+summary: >-
+  OpenCTI exposes a real-time event surface. It is not published as an AsyncAPI
+  document, so this artifact captures the webhook + streaming catalog rather than
+  a spec. NEVER fabricated — derived from Filigran's documented event surfaces.
+event_surfaces:
+- kind: webhook
+  name: Notifier connector (webhooks)
+  since: OpenCTI 5.10
+  docs: https://docs.opencti.io/latest/administration/notifiers/
+  description: >-
+    The notifier connector sends notifications to external services via HTTP.
+    Configurable verb (GET/POST/PUT/DELETE), destination URL, and a message
+    template. Webhooks are triggered from triggers and digests.
+- kind: sse-stream
+  name: Live streams (Server-Sent Events)
+  endpoint: /stream
+  docs: https://docs.opencti.io/latest/reference/streaming/
+  description: >-
+    SSE connection delivering a real-time pure STIX 2.1 event stream; live
+    streams resolve relationships/dependencies beyond plain TAXII.
+- kind: taxii
+  name: TAXII 2.1 server
+  docs: https://docs.opencti.io/latest/reference/streaming/
+  description: >-
+    OpenCTI implements a TAXII 2.1 server with as many collections as needed for
+    STIX 2.1 bundle sharing.
+asyncapi_spec:
+  published: false
+  note: No provider-published AsyncAPI document found; webhook/stream catalog captured instead.

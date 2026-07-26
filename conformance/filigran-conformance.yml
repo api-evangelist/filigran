@@ -1,0 +1,34 @@
+generated: '2026-07-19'
+method: searched
+source: https://filigran.io/ ; https://docs.opencti.io/latest/reference/streaming/
+compliance:
+  published: true
+  certifications:
+  - SOC 2 Type 2
+  - ISO/IEC 27001:2022
+  evidence: https://filigran.io/
+standards:
+- id: soc2-type2
+  conforms: true
+  evidence: Filigran states SOC 2 Type 2 certification on filigran.io
+- id: iso-27001-2022
+  conforms: true
+  evidence: Filigran states ISO/IEC 27001:2022 certification on filigran.io
+- id: iso-22398
+  conforms: true
+  evidence: OpenAEV (OpenBAS) is documented as an ISO 22398-aligned crisis-exercise product
+- id: stix-2.1
+  conforms: true
+  evidence: OpenCTI knowledge model and live streams serve pure STIX 2.1 bundles
+- id: taxii-2.1
+  conforms: true
+  evidence: OpenCTI implements a TAXII 2.1 server with configurable collections
+- id: graphql
+  conforms: true
+  evidence: OpenCTI exposes a full GraphQL API on /graphql
+- id: oauth2-oidc
+  conforms: true
+  evidence: OpenID Connect and SAML 2.0 supported for interactive SSO login
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: no application/problem+json error envelope documented

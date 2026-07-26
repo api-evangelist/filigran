@@ -1,0 +1,33 @@
+generated: '2026-07-19'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: filigran.io
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep 17 18:11:47 2026 GMT
+  hsts: false
+- host: docs.opencti.io
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep 27 09:30:51 2026 GMT
+  hsts: true
+  hsts_max_age: 31556952
+- host: demo.opencti.io
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep  3 02:58:23 2026 GMT
+  hsts: true
+  hsts_max_age: 31536000
+domains:
+- domain: filigran.io
+  dnssec: true
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: reject
+- domain: opencti.io
+  dnssec: true
+  caa: []
+  spf: true
+  dmarc: false

@@ -1,0 +1,24 @@
+generated: '2026-07-19'
+method: searched
+source: https://demo.opencti.io/ ; https://demo.openaev.io/ ; https://docs.opencti.io/latest/development/api-usage/
+sandboxes:
+- name: OpenCTI demonstration instance
+  url: https://demo.opencti.io/
+  type: hosted-demo
+  description: >-
+    Public Filigran-hosted OpenCTI demonstration platform for exploring the
+    product and its data model. Access is granted on request via the demo login.
+- name: OpenCTI GraphQL playground
+  url: https://demo.opencti.io/public/graphql
+  type: playground
+  description: >-
+    GraphiQL-based interactive GraphQL IDE exposed on every OpenCTI instance at
+    /public/graphql for exploring the schema and testing queries.
+- name: OpenAEV demonstration instance
+  url: https://demo.openaev.io/
+  type: hosted-demo
+  description: Public Filigran-hosted OpenAEV (OpenBAS) demonstration platform.
+notes: >-
+  These are self-hostable open-source platforms; the fastest local sandbox is a
+  Docker deployment (xtm-docker / opencti docker-compose). No published static
+  test credentials or magic test values — do not fabricate any.

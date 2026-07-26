@@ -1,0 +1,41 @@
+generated: '2026-07-19'
+method: searched
+source: https://docs.opencti.io/latest/reference/api/ ; https://docs.opencti.io/latest/reference/streaming/
+authentication:
+  style: bearer token in Authorization header
+  ref: authentication/filigran-authentication.yml
+apis:
+- api: OpenCTI GraphQL API
+  protocol: GraphQL
+  endpoint: /graphql
+  playground: /public/graphql (GraphiQL-based)
+  query_model: >-
+    Clients request exactly the fields they need; schema is introspectable via
+    the playground and SDL. Filtering uses OpenCTI's filter groups and queryable
+    fields.
+  pagination:
+    style: Relay-style cursor connections (first / after, edges/node, pageInfo)
+  content_type: application/json
+- api: OpenAEV REST API
+  protocol: REST
+  content_type: application/json
+idempotency:
+  supported: false
+  note: >-
+    No documented idempotency-key header. OpenCTI upsert semantics are handled
+    server-side by STIX id / standard_id matching rather than a client-supplied
+    idempotency key, so no Idempotency pointer is emitted.
+events:
+  streaming: Server-Sent Events (SSE) live streams serving STIX 2.1 bundles at /stream
+  taxii: TAXII 2.1 server with configurable collections
+  webhooks: notifier connector (HTTP GET/POST/PUT/DELETE) triggered from notifications (OpenCTI >= 5.10)
+  ref: asyncapi/filigran-opencti-webhooks.yml
+data_model:
+  standard: STIX 2.1
+  note: OpenCTI entities/relationships follow the STIX 2.1 object model
+error_envelope:
+  format: GraphQL errors[] array (message + extensions); no RFC 9457 problem+json
+cross_links:
+  authentication: authentication/filigran-authentication.yml
+  lifecycle: lifecycle/filigran-lifecycle.yml
+  conformance: conformance/filigran-conformance.yml
