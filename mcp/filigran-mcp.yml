@@ -7,22 +7,23 @@ servers:
   transport: http
   spec: Streamable HTTP (MCP spec 2025-03-26)
   endpoint: POST {basePath}/mcp
-  description: >-
-    OpenCTI embeds a native Model Context Protocol server directly in the
-    platform, exposing ~24 tools for STIX entity management (search, CRUD,
-    labels, markings, containers, indicators, observables) executing internally
-    against the GraphQL engine. Includes a three-tier permission model
-    (platform / group / organization). Any MCP-compatible client (Claude
-    Desktop, Cursor, Filigran Copilot) can connect.
+  description: OpenCTI embeds a native Model Context Protocol server directly in the platform, exposing
+    ~24 tools for STIX entity management (search, CRUD, labels, markings, containers, indicators, observables)
+    executing internally against the GraphQL engine. Includes a three-tier permission model (platform
+    / group / organization). Any MCP-compatible client (Claude Desktop, Cursor, Filigran Copilot) can
+    connect.
   docs: https://docs.opencti.io/
 - name: xtm-mcp
   transport: stdio
   repo: https://github.com/FiligranHQ/xtm-mcp
   language: python
-  description: >-
-    Filigran's official eXtended Threat Management MCP servers repository —
-    MCP servers for the XTM product suite (OpenCTI, OpenAEV).
-notes: >-
-  Official, first-party MCP surface. Tools are hosted inside each OpenCTI
-  deployment rather than at a single global URL, so no single public MCP URL is
-  listed; connect against your instance basePath + /mcp.
+  description: Filigran's official eXtended Threat Management MCP servers repository — MCP servers for
+    the XTM product suite (OpenCTI, OpenAEV).
+notes: Official, first-party MCP surface. Tools are hosted inside each OpenCTI deployment rather than
+  at a single global URL, so no single public MCP URL is listed; connect against your instance basePath
+  + /mcp.
+deployment:
+  mode: unclear
+  verified: searched
+  checked: '2026-08-12'
+  source: catalog MCP census
