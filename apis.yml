@@ -12,6 +12,17 @@ description: >-
   2.1 and SSE live-stream data sharing, webhooks, and a React component /
   design-system library. The company is SOC 2 Type 2 and ISO/IEC 27001:2022
   certified and is backed by Accel and Insight Partners.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: self-serve
