@@ -58,7 +58,7 @@ tags:
 - STIX
 - GraphQL
 - Breach and Attack Simulation
-- Open-Source
+- Open Source
 - Security
 tags_raw:
 - Company
@@ -71,6 +71,7 @@ tags_raw:
 - Breach and Attack Simulation
 - Open Source
 - Security
+- Open-Source
 apis:
 - name: OpenCTI GraphQL API
   description: >-
